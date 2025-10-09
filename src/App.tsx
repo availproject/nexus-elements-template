@@ -5,12 +5,13 @@
 
 // import { useAccount } from "wagmi";
 import Header from "./components/header";
-// import NexusProvider, { useNexus } from "./components/nexus/NexusProvider";
+// import { useNexus } from "./components/nexus/NexusProvider";
 // import UnifiedBalance from "./components/unified-balance/unified-balance";
 // import type { EthereumProvider } from "@avail-project/nexus-core";
 // import { Button } from "./components/ui/button";
 // import { LoaderPinwheelIcon } from "lucide-react";
 // import { Label } from "./components/ui/label";
+// import FastBridge from "./components/fast-bridge/fast-bridge";
 
 function App() {
   // const { connector, status, address } = useAccount();
@@ -26,7 +27,7 @@ function App() {
   // };
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen overflow-hidden">
       <Header />
       <div className="flex flex-col gap-y-4 items-center justify-center w-full min-h-screen border border-border">
         <p className="text-center text-2xl font-bold">
@@ -37,7 +38,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="text-center text-xl font-semibold text-blue-400 underline">
+          <p className="text-center text-xl font-semibold text-primary underline">
             Install Nexus Elements
           </p>
         </a>
@@ -51,22 +52,22 @@ function App() {
             )}
           </Button>
         )}*/}
-        {/*{nexusSDK && (
-          <div className="w-full flex flex-col items-center gap-y-3">
-            <Label className="w-fit font-semibold text-xl">
-              Unified Balance
-            </Label>
-            <UnifiedBalance />
-          </div>
-        )}*/}
-        {/*{nexusSDK && (
-          <div className="w-full flex flex-col items-center gap-y-3">
-            <Label className="w-fit font-semibold text-xl">
-              Fast Bridge
-            </Label>
-            <FastBridge connectedAddress={address} />
-          </div>
-        )}*/}
+        <div className="flex items-start gap-x-4 w-full max-w-6xl">
+          {/*{nexusSDK && (
+            <div className="w-full flex flex-col items-center gap-y-3">
+              <Label className="w-fit font-semibold text-xl">
+                Unified Balance
+              </Label>
+              <UnifiedBalance />
+            </div>
+          )}*/}
+          {/*{nexusSDK && address && (
+            <div className="w-full flex flex-col items-center gap-y-3">
+              <Label className="w-fit font-semibold text-xl">Fast Bridge</Label>
+              <FastBridge connectedAddress={address} />
+            </div>
+          )}*/}
+        </div>
       </div>
     </div>
   );
