@@ -38,7 +38,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <p className="text-center text-xl font-semibold text-blue-400 underline">
-            Insall Nexus Elements
+            Install Nexus Elements
           </p>
         </a>
 
